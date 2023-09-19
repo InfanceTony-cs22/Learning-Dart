@@ -31,3 +31,37 @@ Customization for Each Platform:
 SUMMARY:
 
       In summary, Dart's support for asynchronous programming, isolates for concurrency, focus on UI development, collection handling capabilities, and cross-platform customization features make it a strong choice for building modern, responsive, and visually appealing user interfaces, which is why it was chosen as the language for Flutter.
+
+
+
+THE MAIN ENTRY POINT:
+
+      1.The main() function in Dart serves as the entry point for your application. When you run a Dart program, the Dart compiler looks for this specific function and starts executing the code within it. If the main() function is not found in your code, you will encounter an error, and your application won't run.
+      2.The keyword main is followed by a set of parentheses (()) which is followed by an opening curly bracket ({). Start writing your code from the next line and when you’re done, insert a closing curly bracket (}) in the line after the last line of your code.
+
+
+SYNTAX:
+
+      main(){
+  Insert Code Here
+}
+
+EXMAMPLE:
+
+void main() {
+  print("Hello, World!");
+}
+
+
+
+NOTHING WITHOUT SEMI-COLON:
+
+       * In Dart, just as in most programming languages, each statement needs to end with a semi-colon for the program to execute successfully.
+
+
+IMPERATIVE PROGRAMING:
+
+       * The code that appears inside of the main() function gets executed in order of appearance. Let’s modify the code in the snippet above and try printing From Dart along with Hello World.
+       * It imports the dart:io library to enable I/O operations.
+       * It uses the readLineSync() method to take a line of input from the user.
+       * It concatenates the user's input with "Hello" and displays the result.

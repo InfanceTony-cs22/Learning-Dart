@@ -1,3 +1,5 @@
+                                                                                     DAY:1
+
 DART:
 
 1.Key features and components of Dart include a virtual machine, core libraries, and a package management repository. These tools provide developers with the necessary resources to start and manage their projects efficiently.
@@ -65,3 +67,57 @@ IMPERATIVE PROGRAMING:
        * It imports the dart:io library to enable I/O operations.
        * It uses the readLineSync() method to take a line of input from the user.
        * It concatenates the user's input with "Hello" and displays the result.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                   DAY:2
+VARIABLES:
+
+     * Variables are used for storing information which can then be used by the computer program. Let’s look at this concept from a different angle.
+     * When you declare a variable, you give it a unique name or identifier, define the type of data it can store, and set its initial value.
+
+
+The SYNTAX for initializing a variable in Dart:
+
+      dataType variableName = Initial Value
+
+
+* We start off by mentioning the type of data our variable will hold, such as an integer. Then comes the variable’s unique name, followed by an equal sign (=), and the initial value. Don’t forget the semicolon at the very end.
+* It is a Dart styling convention to name variables using lower camel case. In other words, you should capitalize the first letter of each word except the first word, and use no separators, eg., lowerCamelCase.
+
+
+EXAMPLE:
+
+main() {
+  int myFirstDartVariable = 5;
+}
+
+
+DATA TYPES:
+
+* The data type of an item or variable is an attribute that tells us what kind of data that variable can have.
+* Data types can be found all around us; numbers, alphabets, or characters which are classified based on the similar properties they share.
+
+
+Dart’s built-in data types:
+
+     *  Numbers
+     *  Strings
+     *  Booleans
+     *  Lists
+     *  Sets
+     *  Maps
+     *  Runes
+     *  Symbols
+
+
+
+* The focus of this chapter will be numbers, strings, and booleans. Lists, sets, and maps are topics for another chapter. Runes and symbols are beyond the scope of this course.
+* Before we can move on to each data type in detail, there are a couple of things you should familiarize yourself with.
+
+VALUE AND REFERENCES:
+
+* Data type is classified into two types they are 
+            1.VALUE TYPE
+            2.REFERENCE TYPE
+
+
+

@@ -118,6 +118,111 @@ VALUE AND REFERENCES:
 * Data type is classified into two types they are 
             1.VALUE TYPE
             2.REFERENCE TYPE
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                       DAY:3
+
+
+
+Numbers:
+---------
+
+
+The num Type
+If we want a variable that has a number value, we will declare it using the num data type. The basic syntax is as follows:
+
+
+// Method 1
+num variableName = Number Literal
+// Method 2
+num variableName = Number Variable
+
+Let’s look at an example.
+
+main() {
+  num firstNumber = 99;
+  num secondNumber = 67.88;
+  num thirdNumber = secondNumber;
+
+  // Driver Code
+  print(firstNumber);
+  print(secondNumber);
+  print(thirdNumber);
+}
+
+
+
+Dart numbers are further divided into two subtypes:
+
+integers (int)
+doubles (double)
+Both int and double are subtypes of num.
+
+
+
+Integers:
+------------
+
+Integers are whole numbers without a decimal point.
+
+In the code snippet below, we are declaring two variables of type int. The first variable is a simple integer while the second variable is a hex number.
+
+The basic syntax is as follows:
+
+// Method 1
+int variableName = Integer Literal
+// Method 2
+int variableName = integerVariable
+
+Let’s look at an example.
+
+
+main() {
+  int simpleInteger = 1;
+  int hex = 0xDA34F;
+  int integer = simpleInteger;
+
+  // Driver Code
+  print(simpleInteger); 
+  print(hex);
+  print(integer);
+}
+
+Doubles:
+
+Doubles are numbers that include a decimal point.
+
+In the code snippet below, we are declaring two variables of type double. The first variable is a simple double while the second variable is an exponent.
+
+The basic syntax is as follows:
+  
+    double variableNAme = Double Literal
+
+Let’s look at an example:
+
+main() {
+  double simpleDouble = 1.1;
+  double exponents = 1.42e5;
+
+  // Driver Code
+  print(simpleDouble);
+  print(exponents);
+}
+
+
+As of Dart 2.1, integer literals are automatically converted to doubles when necessary. When you run the code snippet below, the output displayed will be 1.0 rather than 1.
+
+main() {
+  double integerLiteral = 1;
+  
+  print(integerLiteral);
+}
+
+
+
+
+
+
+
 
 
 

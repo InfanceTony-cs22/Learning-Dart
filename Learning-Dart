@@ -216,6 +216,147 @@ main() {
   
   print(integerLiteral);
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Strings:
+---------
+Let’s learn about strings and string literals in Dart
+
+What are strings?
+A Dart string is a sequence of UTF-16 code units. UTF stands for Unicode Transformation Format. Unicode is a set of characters in which each character is a unique code unit.
+
+String literals
+At face-value, string literals are simply text encapsulated in quotation marks
+
+Let’s look at the various ways we can create strings in Dart.
+
+main() {
+  // Single Quotes
+  print('JIJBHJBUVUF');
+
+  // Double Quotes
+  print("Using double quotes");
+
+  // Single quotes with escape character \
+  print('It\'s possible with an escape character');
+
+  // Double quotes
+  print("It's better without an escape character");
+}
+
+All we are doing in the code snippet above is printing strings using multiple techniques. They all are pretty straight forward except for maybe line 9. In line 9 we are using single quotes to create a string, however, the string itself has a single quote in the word It's. If we print the string as-is, 'It's possible with an escape character', we will get an error because the compiler will see the single quotation in the word It's as the closing quotation of the string. To solve this problem, we can use an escape character (\) which tells the compiler to escape the built-in functionality of the single quotation and evaluate it as a string.
+
+
+Defining a string variable
+If we want to define a variable that stores values of type String, we would use the following syntax:
+
+String variableName = String Literal
+
+
+Let’s map the syntax onto some actual Dart code.
+
+main() {
+    String s1 = "IM tony";
+
+    print(s1);
+} 
+
+
+
+String Interpolation:
+---------------------
+
+To concatenate two strings means to join them together. Concatenation of two or more strings is done using the + operator.
+
+main() {
+  String s1 = "First half of the string. ";
+  String s2 = "Second half of the string";
+  print(s1 + s2);
+}
+
+
+The code above is pretty simple. On line 4 we are concatenating the first string, s1, and the second string, s2, and then printing the concatenated string.
+
+String interpolation
+String interpolation is the ability to create new strings or modify existing ones by embedding them with expressions. Expressions are evaluated, and the resulting values are converted into strings and concatenated with the enclosing string. Interpolation is Dart’s more concise and efficient alternative to string concatenation. However, string interpolation is a lot more complex than simple concatenation which allows a lot more flexibility.
+
+
+Syntax
+-------
+An un-escaped $ character in a string signifies the beginning of an interpolated expression.
+
+The $ sign can be followed by a single identifier id that does not contain the $ character
+
+    print ("optionalstring $variableIndentifies optional string")
+
+
+Learning by example:
+
+Let’s look at some different coding examples to get a better idea of how string interpolation works
+
+main() {
+  String country = "Japan";
+
+  print("I want to visit $country");
+}
+
+In the above code, assign a value to the country variable based on the country you want to visit.
+
+Instead of changing the print statement each time, all we have to do is change the value of the variable being interpolated.
+
+Let’s now try to embed a mathematical expression in a string using the curly brackets ({}).
+
+main() {
+  print("The sum of 5 and 3 equals ${5+3}.");
+}
+
+
+Multiple lines
+You can concatenate strings using adjacent string literals as well.
+
+Notice how we have used both double (") and single (') quotation marks.
+
+main() {
+  var s1 = 'String '
+    'concatenation'
+    " works even over line breaks.";
+    
+  print(s1);
+}
+
+
+When we run the code snippet above, we get one complete string on a single line.
+
+But what if we actually wanted to have a string on multiple lines?
+
+You can create multiline strings in Dart. To do so, you simply write your string as you want to print it and surround it with three double quotation marks or three single quotation marks.
+
+
+Let’s look at an example below.
+
+main() {
+  var multilineString = """This is a 
+multiline string
+consisting of 
+multiple lines""";
+
+  print(multilineString);
+}
+
+Output
+
+This is a 
+multiline string
+consisting of 
+multiple lines
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------v
+
+
+
+
+
+
 
 
 
